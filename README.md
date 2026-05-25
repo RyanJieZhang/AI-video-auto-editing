@@ -5,6 +5,7 @@ Language / 语言：
 - [中文 README](README.zh-CN.md)
 - [English README](README.en.md)
 - [Agent 工作流程图](workflow/agent-workflow-diagram.md)
+- [Interactive Demo](demo/index.html)
 
 AI-video-auto-editing is a Codex Skills + Remotion workflow project for building a repeatable AI-assisted video production system.
 
@@ -27,6 +28,7 @@ It includes:
 - A Remotion-oriented assembly plan
 - Workflow documents for repeatable video creation
 - A visual Agent workflow diagram for first-time readers
+- A lightweight interactive demo page
 
 ## Repository
 
