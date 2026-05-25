@@ -4,6 +4,8 @@
 
 A Codex Skills + Remotion workflow project for AI-assisted video creation and automated editing.
 
+If you are new to this project, start with the [Agent workflow diagram](workflow/agent-workflow-diagram.md).
+
 This repository is not built around a single all-powerful prompt. Instead, it turns video creation into a reusable, debuggable, and continuously improvable production system: creative planning, voiceover writing, asset gathering, asset alignment, motion design, audio direction, Remotion assembly, QA, export, and publishing.
 
 ## Project Purpose

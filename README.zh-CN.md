@@ -4,6 +4,8 @@
 
 一个基于 Codex Skills + Remotion 的 AI 视频自动剪辑工作流项目。
 
+第一次了解本项目，建议先看：[Agent 工作流程图](workflow/agent-workflow-diagram.md)。
+
 这个仓库的目标不是只写一个万能 prompt，而是把视频创作拆成可复用、可调试、可逐步优化的生产系统：从创意规划、口播脚本、素材收集、素材对齐、动效规划、音频设计，到 Remotion 装配、QA、导出和发布包装。
 
 ## 项目定位
