@@ -93,6 +93,28 @@
 - `assets/`：视频、图片、音乐、音效、截图、生成素材等。
 - `exports/`：最终导出视频、封面、发布文案、QA 检查结果。
 
+## 当前可运行产物
+
+- `demo/index.html`：静态交互式流程演示。
+- `exports/why-not-one-prompt-demo.mp4`：60 秒竖屏 MVP 视频。
+- `exports/张府皇家航空宣传片2_已修改.mp4`：机场文字修改后的横屏示例视频。
+- `exports/zhangfu-airline-v002-vertical.mp4`：张府皇家航空 v002 竖屏优化版。
+- `scripts/render_mvp_video.py`：不依赖 Remotion 的 Python MVP 渲染脚本。
+- `scripts/render_airline_promo_v002.py`：把横屏航空素材包装成竖屏 v002 草稿。
+- `scripts/analyze_footage.py`：生成镜头表、素材备注和 contact sheet。
+- `scripts/create_export_version.py`：把成片和相关文档归档到 `exports/vNNN`。
+- `scripts/quality_gate.py`：检查尺寸、音频、质量评分和发布门槛。
+
+## 质量门禁
+
+每次导出后运行：
+
+```powershell
+python scripts/quality_gate.py exports/zhangfu-airline-v002-vertical.mp4 --vertical --min-score 8
+```
+
+如果没有通过，就继续按 `exports/quality-review.md` 的 Top Fixes 做下一版，而不是直接发布。
+
 ## 自定义 Skills
 
 本仓库内置 15 个自定义 Codex Skills。

@@ -11,6 +11,11 @@
 - Pixel format: yuv420p
 - Audio: none in MVP
 
+## Additional Exports
+
+- `exports/张府皇家航空宣传片2_已修改.mp4`: edited source demo with airport text changed.
+- `exports/zhangfu-airline-v002-vertical.mp4`: improved 720x1280 vertical airline promo draft with title, captions, framed source footage, background blur, and preserved source audio.
+
 ## Title Options
 
 1. 为什么不要用一个万能 prompt 自动剪视频
@@ -72,3 +77,5 @@
 - MVP 暂无真实配音和 BGM。
 - 文字适合竖屏阅读，但后续可以进一步压缩字幕长度。
 - 720p 版本适合快速演示；正式发布建议用 Remotion 渲染 1080x1920。
+- 航空 v002 已经适配竖屏，但仍需要 BGM/SFX 和更干净的机场文字镜头才能进入 final。
+- 每次导出后运行 `scripts/quality_gate.py`；平均分低于 8/10 时继续迭代，不标记 final。

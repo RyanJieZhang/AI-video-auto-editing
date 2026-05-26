@@ -95,6 +95,28 @@ Additional optimization skill:
 - `assets/`: Video clips, images, music, sound effects, screenshots, and generated assets.
 - `exports/`: Final renders, thumbnails, publishing copy, and QA notes.
 
+## Current Runnable Artifacts
+
+- `demo/index.html`: static interactive workflow demo.
+- `exports/why-not-one-prompt-demo.mp4`: 60-second vertical MVP explainer.
+- `exports/张府皇家航空宣传片2_已修改.mp4`: edited horizontal airport-text demo video.
+- `exports/zhangfu-airline-v002-vertical.mp4`: improved vertical v002 airline promo draft.
+- `scripts/render_mvp_video.py`: Python fallback renderer for the MVP video.
+- `scripts/render_airline_promo_v002.py`: turns the horizontal airline demo into a vertical v002 draft.
+- `scripts/analyze_footage.py`: creates a shot list, footage notes, and contact sheet.
+- `scripts/create_export_version.py`: archives a render and related notes into `exports/vNNN`.
+- `scripts/quality_gate.py`: checks metadata, audio, review score, and release threshold.
+
+## Quality Gate
+
+Run this after every export:
+
+```powershell
+python scripts/quality_gate.py exports/zhangfu-airline-v002-vertical.mp4 --vertical --min-score 8
+```
+
+If it fails, use the Top Fixes in `exports/quality-review.md` to route the next revision instead of publishing the draft.
+
 ## Custom Skills
 
 This repository includes 15 custom Codex Skills.

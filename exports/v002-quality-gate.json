@@ -1,0 +1,49 @@
+{
+  "passed": false,
+  "video": {
+    "path": "E:\\自学\\projects\\AI视频自动剪辑\\exports\\zhangfu-airline-v002-vertical.mp4",
+    "exists": true,
+    "width": 720,
+    "height": 1280,
+    "duration": 9.98,
+    "fps": 24.0,
+    "audio_codec": "aac"
+  },
+  "checks": [
+    {
+      "name": "video exists",
+      "passed": true,
+      "detail": "E:\\自学\\projects\\AI视频自动剪辑\\exports\\zhangfu-airline-v002-vertical.mp4"
+    },
+    {
+      "name": "duration > 3s",
+      "passed": true,
+      "detail": "9.98s"
+    },
+    {
+      "name": "fps >= 23",
+      "passed": true,
+      "detail": "24.00 fps"
+    },
+    {
+      "name": "audio present",
+      "passed": true,
+      "detail": "aac"
+    },
+    {
+      "name": "vertical aspect",
+      "passed": true,
+      "detail": "720x1280"
+    },
+    {
+      "name": "quality review exists",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "average score >= 8.0",
+      "passed": false,
+      "detail": "7.3/10"
+    }
+  ]
+}

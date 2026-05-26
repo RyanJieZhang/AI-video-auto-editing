@@ -70,3 +70,17 @@ Use a real footage-based task, then force these outputs before editing:
 - `scripts/analyze_footage.py`: extracts frames, creates a contact sheet, detects rough shot ranges, writes `plan/shot-list.md` and `plan/footage-notes.md`.
 - `scripts/create_export_version.py`: archives renders and review files into versioned folders such as `exports/v001`.
 - `platform-profiles/`: platform-specific guidance for Bilibili, Xiaohongshu, Douyin, and YouTube Shorts.
+- `scripts/render_airline_promo_v002.py`: renders the edited airline footage as a vertical v002 draft with titles, captions, visual hierarchy, light grading, and preserved audio.
+- `scripts/quality_gate.py`: checks duration, fps, audio, vertical aspect ratio, and the current quality-review score before a draft can be called final.
+
+## Latest Improvement Loop
+
+```text
+analyze footage
+-> creative direction
+-> edit decision list
+-> lookbook/title style
+-> render vNNN
+-> quality gate
+-> reroute top fixes
+```
