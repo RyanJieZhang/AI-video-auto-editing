@@ -1,0 +1,215 @@
+{
+  "source": "E:\\自学\\projects\\AI视频自动剪辑\\exports\\张府皇家航空宣传片2_已修改.mp4",
+  "metadata": {
+    "plugin": "ffmpeg",
+    "nframes": Infinity,
+    "ffmpeg_version": "7.1-essentials_build-www.gyan.dev built with gcc 14.2.0 (Rev1, Built by MSYS2 project)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "audio_codec": "aac",
+    "fps": 24.0,
+    "source_size": [
+      1280,
+      720
+    ],
+    "size": [
+      1280,
+      720
+    ],
+    "rotate": 0,
+    "duration": 10.0
+  },
+  "sample_interval": 0.5,
+  "shot_threshold": 30.0,
+  "samples": [
+    {
+      "time": 0.0,
+      "brightness": 111.06854248046875,
+      "contrast": 58.964420318603516,
+      "sharpness": 74.93013000488281,
+      "diff": 0.0
+    },
+    {
+      "time": 0.5,
+      "brightness": 107.03612518310547,
+      "contrast": 57.87003707885742,
+      "sharpness": 75.96450805664062,
+      "diff": 24.034652709960938
+    },
+    {
+      "time": 1.0,
+      "brightness": 104.14553833007812,
+      "contrast": 56.79259490966797,
+      "sharpness": 80.70594787597656,
+      "diff": 22.606748580932617
+    },
+    {
+      "time": 1.5,
+      "brightness": 100.22964477539062,
+      "contrast": 55.197940826416016,
+      "sharpness": 69.577880859375,
+      "diff": 22.817054748535156
+    },
+    {
+      "time": 2.0,
+      "brightness": 135.6632080078125,
+      "contrast": 55.19103240966797,
+      "sharpness": 46.71765899658203,
+      "diff": 54.493167877197266
+    },
+    {
+      "time": 2.5,
+      "brightness": 133.91371154785156,
+      "contrast": 54.778202056884766,
+      "sharpness": 47.30299377441406,
+      "diff": 26.3692684173584
+    },
+    {
+      "time": 3.0,
+      "brightness": 135.10690307617188,
+      "contrast": 52.7772102355957,
+      "sharpness": 49.39190673828125,
+      "diff": 30.90148162841797
+    },
+    {
+      "time": 3.5,
+      "brightness": 94.2884521484375,
+      "contrast": 54.66893768310547,
+      "sharpness": 69.09183502197266,
+      "diff": 64.48391723632812
+    },
+    {
+      "time": 4.0,
+      "brightness": 94.09952545166016,
+      "contrast": 54.729881286621094,
+      "sharpness": 70.82491302490234,
+      "diff": 20.002395629882812
+    },
+    {
+      "time": 4.5,
+      "brightness": 94.2630844116211,
+      "contrast": 54.37145233154297,
+      "sharpness": 69.13728332519531,
+      "diff": 21.08110237121582
+    },
+    {
+      "time": 5.0,
+      "brightness": 95.18882751464844,
+      "contrast": 54.33084487915039,
+      "sharpness": 68.09356689453125,
+      "diff": 20.56955909729004
+    },
+    {
+      "time": 5.5,
+      "brightness": 95.33112335205078,
+      "contrast": 54.57868194580078,
+      "sharpness": 64.24119567871094,
+      "diff": 19.401662826538086
+    },
+    {
+      "time": 6.0,
+      "brightness": 103.39378356933594,
+      "contrast": 62.26873779296875,
+      "sharpness": 71.99646759033203,
+      "diff": 50.285030364990234
+    },
+    {
+      "time": 6.5,
+      "brightness": 103.3431625366211,
+      "contrast": 62.28142547607422,
+      "sharpness": 72.80308532714844,
+      "diff": 2.2984068393707275
+    },
+    {
+      "time": 7.0,
+      "brightness": 103.32779693603516,
+      "contrast": 62.25117111206055,
+      "sharpness": 72.66280364990234,
+      "diff": 1.9260234832763672
+    },
+    {
+      "time": 7.5,
+      "brightness": 111.4698486328125,
+      "contrast": 45.55902862548828,
+      "sharpness": 57.70005798339844,
+      "diff": 58.278785705566406
+    },
+    {
+      "time": 8.0,
+      "brightness": 111.90765380859375,
+      "contrast": 46.0933723449707,
+      "sharpness": 56.20891571044922,
+      "diff": 16.054378509521484
+    },
+    {
+      "time": 8.5,
+      "brightness": 109.29427337646484,
+      "contrast": 37.02164840698242,
+      "sharpness": 48.24523162841797,
+      "diff": 33.280914306640625
+    },
+    {
+      "time": 9.0,
+      "brightness": 109.4854736328125,
+      "contrast": 37.04338455200195,
+      "sharpness": 44.565269470214844,
+      "diff": 4.189113616943359
+    },
+    {
+      "time": 9.5,
+      "brightness": 91.11845397949219,
+      "contrast": 65.76268768310547,
+      "sharpness": 97.3668441772461,
+      "diff": 58.4962158203125
+    },
+    {
+      "time": 9.95,
+      "brightness": 91.32657623291016,
+      "contrast": 65.63933563232422,
+      "sharpness": 95.48904418945312,
+      "diff": 3.7700130939483643
+    }
+  ],
+  "shots": [
+    {
+      "start": 0.0,
+      "end": 1.5,
+      "sample_count": 4
+    },
+    {
+      "start": 2.0,
+      "end": 2.5,
+      "sample_count": 2
+    },
+    {
+      "start": 3.0,
+      "end": 3.0,
+      "sample_count": 1
+    },
+    {
+      "start": 3.5,
+      "end": 5.5,
+      "sample_count": 5
+    },
+    {
+      "start": 6.0,
+      "end": 7.0,
+      "sample_count": 3
+    },
+    {
+      "start": 7.5,
+      "end": 8.0,
+      "sample_count": 2
+    },
+    {
+      "start": 8.5,
+      "end": 9.0,
+      "sample_count": 2
+    },
+    {
+      "start": 9.5,
+      "end": 9.95,
+      "sample_count": 2
+    }
+  ]
+}

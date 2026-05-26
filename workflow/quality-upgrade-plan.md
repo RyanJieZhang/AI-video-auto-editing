@@ -64,3 +64,9 @@ Use a real footage-based task, then force these outputs before editing:
 - `plan/edit-decision-list.md`
 - `plan/lookbook.md`
 - `exports/quality-review.md`
+
+## New Tooling
+
+- `scripts/analyze_footage.py`: extracts frames, creates a contact sheet, detects rough shot ranges, writes `plan/shot-list.md` and `plan/footage-notes.md`.
+- `scripts/create_export_version.py`: archives renders and review files into versioned folders such as `exports/v001`.
+- `platform-profiles/`: platform-specific guidance for Bilibili, Xiaohongshu, Douyin, and YouTube Shorts.

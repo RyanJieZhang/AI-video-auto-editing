@@ -7,6 +7,7 @@
 第一次了解本项目，建议先看：[Agent 工作流程图](workflow/agent-workflow-diagram.md)。
 也可以直接打开：[交互式 Demo](demo/index.html)。
 本轮质量升级说明见：[Quality Upgrade Plan](workflow/quality-upgrade-plan.md)。
+版本化导出说明见：[Versioned Exports](workflow/versioned-exports.md)。
 
 这个仓库的目标不是只写一个万能 prompt，而是把视频创作拆成可复用、可调试、可逐步优化的生产系统：从创意规划、口播脚本、素材收集、素材对齐、动效规划、音频设计，到 Remotion 装配、QA、导出和发布包装。
 
