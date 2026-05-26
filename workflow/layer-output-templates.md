@@ -30,6 +30,59 @@ Path: `plan/creative-brief.md`
 ## Open Questions
 ```
 
+## Creative Direction
+
+Path: `plan/creative-direction.md`
+
+```md
+# Creative Direction
+
+## Creative Promise
+
+## Target Feeling
+
+## Reference Style
+
+## Hook Strategy
+
+## Visual Rules
+
+## Pacing Rules
+
+## Avoid
+
+## Quality Bar
+```
+
+## Shot List
+
+Path: `plan/shot-list.md`
+
+```md
+# Shot List
+
+| Shot | Time Range | Description | Quality | Use | Risks | Notes |
+| --- | --- | --- | ---: | --- | --- | --- |
+```
+
+## Footage Notes
+
+Path: `plan/footage-notes.md`
+
+```md
+# Footage Notes
+
+## Metadata
+
+## Best Moments
+
+## Weak or Unusable Moments
+
+## Text / Logo / Cleanup Needs
+
+## Editing Opportunities
+```
+
 ## Script
 
 Path: `plan/script.md`
@@ -66,6 +119,17 @@ Path: `plan/timeline.md`
 | 1 | 0:00 | 0:05 |  | A001 |  |  |
 ```
 
+## Edit Decision List
+
+Path: `plan/edit-decision-list.md`
+
+```md
+# Edit Decision List
+
+| Time | Shot/Asset | Edit Decision | Reason | Audio | Notes |
+| --- | --- | --- | --- | --- | --- |
+```
+
 ## Motion Plan
 
 Path: `plan/motion-plan.md`
@@ -76,6 +140,65 @@ Path: `plan/motion-plan.md`
 | Moment | Purpose | Visual Treatment | Animation | Implementation Notes |
 | --- | --- | --- | --- | --- |
 | Hook | attention |  |  |  |
+```
+
+## Lookbook
+
+Path: `plan/lookbook.md`
+
+```md
+# Lookbook
+
+## Visual Direction
+
+## Palette
+
+## Typography
+
+## Caption System
+
+## Card / Graphic System
+
+## Color Grade Notes
+
+## Scene Notes
+```
+
+## Title Style
+
+Path: `plan/title-style.md`
+
+```md
+# Title Style
+
+## Opening Title
+
+## Captions
+
+## Callouts
+
+## End Card
+```
+
+## Quality Review
+
+Path: `exports/quality-review.md`
+
+```md
+# Quality Review
+
+## Verdict
+
+## Scores
+
+| Dimension | Score | Notes | Owner |
+| --- | ---: | --- | --- |
+
+## Top Fixes
+
+## Publishability
+
+## Next Pass
 ```
 
 ## QA Checklist

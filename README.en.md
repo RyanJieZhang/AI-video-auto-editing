@@ -6,6 +6,7 @@ A Codex Skills + Remotion workflow project for AI-assisted video creation and au
 
 If you are new to this project, start with the [Agent workflow diagram](workflow/agent-workflow-diagram.md).
 You can also open the [interactive demo](demo/index.html).
+The latest quality upgrade is documented in the [Quality Upgrade Plan](workflow/quality-upgrade-plan.md).
 
 This repository is not built around a single all-powerful prompt. Instead, it turns video creation into a reusable, debuggable, and continuously improvable production system: creative planning, voiceover writing, asset gathering, asset alignment, motion design, audio direction, Remotion assembly, QA, export, and publishing.
 
@@ -26,20 +27,24 @@ Core principle:
 Planning -> Script -> Assets -> Alignment -> Motion -> Audio -> Remotion Assembly -> QA/Export -> Retrospective
 ```
 
-## 8-Layer Video Creation System
+## Quality-First Video Creation System
 
-The project uses layered collaboration instead of asking one prompt to do everything.
+The project uses layered collaboration instead of asking one prompt to do everything. The upgraded workflow adds direction, footage analysis, edit judgment, look design, and quality scoring to solve the gap between "it runs" and "it feels high quality."
 
 | Layer | Module | Responsibility | Skill |
 | --- | --- | --- | --- |
 | 1 | Workflow Router / Index | Decide the current stage and which skill to use | `video-workflow-router` |
-| 2 | Creative & Planning | Define topic, audience, hook, chapters, and visual direction | Project workflow template |
-| 3 | Voiceover Editor | Rewrite narration, split spoken beats, plan A-roll/B-roll | `voiceover-editor` |
-| 4 | Asset Factory | Search, generate, download, transcode, and validate assets | `asset-gathering` |
-| 5 | Asset Usage & Alignment | De-duplicate assets, assign timeline slots, align to meaning | `asset-usage-planner` |
-| 6 | Motion / HyperFrames | Plan hook frames, transitions, data cards, and advanced motion | `motion-fragments` |
-| 7 | Audio Direction | Plan BGM, SFX, ducking, and voice priority | `audio-director` |
-| 8 | Remotion Assembly / QA / Export | Build Composition, Scene, Sequence, captions, and exports | `remotion-assembler`, `remotion-gotchas-index`, `platform-packaging` |
+| 2 | Creative Direction | Define style, reference, hook, and quality bar | `creative-director` |
+| 3 | Creative & Planning | Define topic, audience, chapters, and production constraints | Project workflow template |
+| 4 | Footage Analysis | Extract frames, score shots, flag cleanup needs | `footage-analyzer` |
+| 5 | Voiceover Editor | Rewrite narration, split spoken beats, plan A-roll/B-roll | `voiceover-editor` |
+| 6 | Asset Factory | Search, generate, download, transcode, and validate assets | `asset-gathering` |
+| 7 | Edit Direction | Choose opening shot, cut rhythm, removals, retention beats | `edit-director` |
+| 8 | Asset Usage & Alignment | De-duplicate assets, assign timeline slots, align to meaning | `asset-usage-planner` |
+| 9 | Motion / HyperFrames | Plan hook frames, transitions, data cards, and advanced motion | `motion-fragments` |
+| 10 | Look Design | Define color, typography, captions, titles, and polish | `look-designer` |
+| 11 | Audio Direction | Plan BGM, SFX, ducking, and voice priority | `audio-director` |
+| 12 | Remotion Assembly / QA / Export | Build Composition, Scene, Sequence, captions, score quality, and export | `remotion-assembler`, `remotion-gotchas-index`, `quality-critic`, `platform-packaging` |
 
 Additional optimization skill:
 
@@ -91,7 +96,27 @@ Additional optimization skill:
 
 ## Custom Skills
 
-This repository includes 10 custom Codex Skills.
+This repository includes 15 custom Codex Skills.
+
+### `creative-director`
+
+Owns style, hook, reference direction, pacing rules, and the quality bar.
+
+### `footage-analyzer`
+
+Analyzes raw footage: extracts frames, scores shots, identifies best moments, weak footage, and cleanup needs.
+
+### `edit-director`
+
+Owns high-level editing judgment: opening shot, cut rhythm, shot order, removals, J-cuts/L-cuts, and retention beats.
+
+### `look-designer`
+
+Owns visual finish: color, typography, captions, title cards, cover direction, grading notes, and visual consistency.
+
+### `quality-critic`
+
+Scores draft videos for hook, clarity, rhythm, visual polish, captions, audio, platform fit, and memorability. Drafts below 8/10 should not be treated as final.
 
 ### `video-workflow-router`
 
@@ -384,7 +409,7 @@ The `skills/` directory in this repository is a project copy. To make Codex load
 Windows PowerShell example:
 
 ```powershell
-$repoSkills = "E:\OneDrive - The University of Sydney (Students)\文档\AI视频自动剪辑\skills"
+$repoSkills = "E:\自学\projects\AI视频自动剪辑\skills"
 $codexSkills = "$env:USERPROFILE\.codex\skills"
 Copy-Item "$repoSkills\*" $codexSkills -Recurse -Force
 ```
@@ -456,13 +481,14 @@ Remotion implementation principles:
 
 ## Current Status
 
-- [x] Created the 8-layer video creation workflow.
-- [x] Created 10 custom Codex Skills.
+- [x] Created the quality-first video creation workflow.
+- [x] Created 15 custom Codex Skills.
 - [x] Created the master production prompt.
 - [x] Created layer rerun prompts.
 - [x] Created the retrospective prompt.
 - [x] Created the prompt iteration log.
 - [x] Uploaded the project to GitHub.
+- [x] Added creative direction, footage analysis, edit direction, look design, and quality critique layers.
 - [ ] Complete the first full video production run.
 - [ ] Mark Baseline v1.
 - [ ] Continue improving skills based on real production results.

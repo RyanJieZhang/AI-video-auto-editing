@@ -1,6 +1,6 @@
-# 8-Layer Video Creation System
+# Quality-First Video Creation System
 
-This workflow turns a video request into a staged production process. The goal is clear ownership per layer: planning, voice, assets, alignment, motion, Remotion build, and export should not collapse into one vague prompt.
+This workflow turns a video request into a staged production process. The goal is not only to make a video run, but to make it improve. Planning, direction, footage analysis, edit judgment, visual design, audio, Remotion build, QA, quality critique, and packaging should not collapse into one vague prompt.
 
 ## 1. Workflow Router / Index
 
@@ -24,16 +24,40 @@ Output:
 
 ## 2. Creative & Planning
 
-Purpose: clarify topic, audience, hook, chapters, visual direction, and production constraints.
+Skills: `creative-director` plus the project workflow brief template
+
+Purpose: clarify topic, audience, hook, chapters, visual direction, reference style, and production constraints.
 
 Actions:
+- Use `creative-director` to set style, hook, reference direction, visual rules, pacing rules, and quality bar.
 - Define objective, audience, format, platform, duration, tone, and core message.
 - Draft the hook and chapter structure.
 - Decide the visual language: documentary, tutorial, data card, product demo, meme, cinematic, editorial, or hybrid.
 - Record assumptions and facts that need verification.
 
 Output:
+- `plan/creative-direction.md`
 - `plan/creative-brief.md`
+
+## Footage Analysis
+
+Skill: `footage-analyzer`
+
+Purpose: understand raw video before making edit decisions.
+
+Use this layer when the user provides existing footage.
+
+Actions:
+- Inspect metadata, duration, FPS, resolution, audio, and codec.
+- Extract key frames or contact sheets.
+- Segment footage into shots or practical time ranges.
+- Score shots for clarity, composition, motion, lighting, brand fit, and edit value.
+- Identify text/logos/cleanup needs.
+- Mark best moments and weak moments.
+
+Output:
+- `plan/shot-list.md`
+- `plan/footage-notes.md`
 
 ## 3. Voiceover Editor
 
@@ -70,17 +94,19 @@ Output:
 
 ## 5. Asset Usage & Alignment
 
-Skill: `asset-usage-planner`
+Skills: `edit-director`, then `asset-usage-planner`
 
 Purpose: assign assets to narration and timeline slots so there is no duplication, gap, or misalignment.
 
 Actions:
+- Use `edit-director` to choose opening shot, shot order, cut rhythm, retention beats, and removal decisions.
 - Map every spoken beat to an asset, visual treatment, or text/card moment.
 - Define timing, start frame, end frame, transitions, and on-screen text.
 - Flag repeated assets and weak visual beats.
 - Confirm that the timeline fits target duration.
 
 Output:
+- `plan/edit-decision-list.md`
 - `plan/timeline.md`
 
 ## 6. Motion / HyperFrames
@@ -96,6 +122,22 @@ Actions:
 
 Output:
 - `plan/motion-plan.md`
+
+## Look Design
+
+Skill: `look-designer`
+
+Purpose: improve perceived production quality through color, typography, captions, layout, titles, and visual consistency.
+
+Actions:
+- Define palette, contrast, type scale, caption style, card system, and safe areas.
+- Specify title card, lower-third, callout, and end-card rules.
+- Define color correction and grading notes.
+- Identify scenes that need visual polish.
+
+Output:
+- `plan/lookbook.md`
+- `plan/title-style.md`
 
 ## Audio Direction
 
@@ -129,20 +171,23 @@ Output:
 - Remotion project files
 - Working Studio preview
 
-## 8. QA / Packaging / Export
+## 8. QA / Quality / Packaging / Export
 
-Skills: `remotion-gotchas-index`, `platform-packaging`
+Skills: `remotion-gotchas-index`, `quality-critic`, `platform-packaging`
 
-Purpose: verify, render, package, and prepare publishing material.
+Purpose: verify, score, improve, render, package, and prepare publishing material.
 
 Actions:
 - Preview the full video.
 - Check text fit, timing, audio sync, safe areas, asset quality, and spelling.
+- Use `quality-critic` to score hook, clarity, footage, rhythm, visual polish, captions, audio, motion, platform fit, and memorability.
+- If average quality is below 8/10, route fixes back to the responsible layer.
 - Render the final video.
 - Create title, description, cover/thumbnail notes, and publishing checklist.
 
 Output:
 - Final render in `exports/`
+- `exports/quality-review.md`
 - Packaging notes
 
 ## Prompt Iteration / Workflow Optimization
@@ -164,6 +209,6 @@ Output:
 
 ## Core Principle
 
-Planning -> Assets -> Alignment -> Motion -> Assembly -> Export.
+Direction -> Footage Understanding -> Script -> Assets -> Edit Judgment -> Look/Sound -> Assembly -> Quality Review -> Export.
 
 Each layer should hand the next layer a concrete artifact. If an artifact is missing, create it before moving on.

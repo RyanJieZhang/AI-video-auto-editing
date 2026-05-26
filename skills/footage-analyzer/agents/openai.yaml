@@ -1,0 +1,3 @@
+interface:
+  display_name: "Footage Analyzer"
+  short_description: "Inspect raw videos, extract frames, score shots, and create shot lists."

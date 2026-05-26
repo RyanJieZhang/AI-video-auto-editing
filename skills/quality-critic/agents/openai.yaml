@@ -1,0 +1,3 @@
+interface:
+  display_name: "Quality Critic"
+  short_description: "Score draft videos and route quality fixes to the right layer."

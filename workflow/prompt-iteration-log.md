@@ -90,3 +90,38 @@ Consider updating `remotion-assembler` with a fallback-render note for environme
 Next test:
 
 Install Node/npm or Remotion dependencies, run Remotion Studio, and render the same composition at 1080x1920 with audio.
+
+## Iteration 2
+
+Date: 2026-05-26
+
+Prompt used:
+
+现在请按照上面的修改方案进行修改。
+
+Video idea:
+
+Upgrade the workflow so future videos can become higher quality, not only procedurally complete.
+
+What worked:
+
+- Added five new quality-focused skills: `creative-director`, `footage-analyzer`, `edit-director`, `look-designer`, and `quality-critic`.
+- Updated the router, AGENTS.md, workflow docs, prompts, layer templates, README files, and workflow diagram.
+- Added an explicit quality gate: draft videos need `exports/quality-review.md` and should score at least 8/10 average to be treated as final.
+
+What failed or felt slow:
+
+- The previous workflow diagram and README were tightly coupled to the older layer count, so multiple docs needed coordinated updates.
+
+Skill routing issues:
+
+- New expected route is now: creative direction -> footage analysis when footage exists -> script -> assets -> edit direction -> asset usage -> motion -> look design -> audio -> assembly -> technical QA -> quality critique -> packaging.
+
+Workflow or skill change:
+
+- Quality review is now required after meaningful draft renders.
+- Footage-based work must start with `footage-analyzer` before edit decisions.
+
+Next test:
+
+Run a real footage-based video task using the upgraded route and force `plan/shot-list.md`, `plan/edit-decision-list.md`, `plan/lookbook.md`, and `exports/quality-review.md` before final approval.

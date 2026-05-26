@@ -9,15 +9,20 @@ Use this skill before doing video work. Decide the active layer, call the right 
 
 ## Route Map
 
-1. Concept, audience, hook, structure, visual direction: use planning in the project workflow.
-2. Voiceover, spoken beats, narration timing, A-roll/B-roll intent: use `voiceover-editor`.
-3. Search, generate, download, transcode, verify, and manifest assets: use `asset-gathering`.
-4. Assign assets to beats, remove duplicates, build an edit plan: use `asset-usage-planner`.
-5. Hook frames, advanced transitions, data cards, demos, kinetic moments: use `motion-fragments`.
-6. BGM, music search, sound effects, ducking, audio priority: use `audio-director`.
-7. Remotion Composition, Scene, Sequence, CaptionLayer, editPlan implementation: use `remotion-assembler` and `remotion-best-practices`.
-8. Debugging Remotion failures or risky patterns: use `remotion-gotchas-index`.
-9. Titles, thumbnails, timestamps, descriptions, platform exports: use `platform-packaging`.
+1. Style, hook, reference direction, quality bar: use `creative-director`.
+2. Raw footage inspection, shot scoring, text/logo cleanup needs: use `footage-analyzer`.
+3. Concept, audience, structure, production constraints: use planning in the project workflow.
+4. Voiceover, spoken beats, narration timing, A-roll/B-roll intent: use `voiceover-editor`.
+5. Search, generate, download, transcode, verify, and manifest assets: use `asset-gathering`.
+6. Opening shot, cut rhythm, removals, retention beats: use `edit-director`.
+7. Assign assets to beats, remove duplicates, build an edit plan: use `asset-usage-planner`.
+8. Hook frames, advanced transitions, data cards, demos, kinetic moments: use `motion-fragments`.
+9. Color, typography, captions, title cards, and visual polish: use `look-designer`.
+10. BGM, music search, sound effects, ducking, audio priority: use `audio-director`.
+11. Remotion Composition, Scene, Sequence, CaptionLayer, editPlan implementation: use `remotion-assembler` and `remotion-best-practices`.
+12. Debugging Remotion failures or risky patterns: use `remotion-gotchas-index`.
+13. Scoring draft quality and routing fixes: use `quality-critic`.
+14. Titles, thumbnails, timestamps, descriptions, platform exports: use `platform-packaging`.
 
 ## Routing Protocol
 
@@ -35,6 +40,7 @@ Proceed when the missing blockers are not essential. Ask only when the choice af
 
 - Do not download or generate assets directly; route to `asset-gathering`.
 - Do not write Remotion components directly; route to `remotion-assembler`.
+- Do not call a draft final before `quality-critic` scores it.
 - Do not patch random timeline issues from packaging; route back to the responsible layer.
 - Do not combine planning, asset acquisition, implementation, and export in one undifferentiated answer.
 

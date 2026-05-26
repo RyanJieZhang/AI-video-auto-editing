@@ -6,6 +6,7 @@
 
 第一次了解本项目，建议先看：[Agent 工作流程图](workflow/agent-workflow-diagram.md)。
 也可以直接打开：[交互式 Demo](demo/index.html)。
+本轮质量升级说明见：[Quality Upgrade Plan](workflow/quality-upgrade-plan.md)。
 
 这个仓库的目标不是只写一个万能 prompt，而是把视频创作拆成可复用、可调试、可逐步优化的生产系统：从创意规划、口播脚本、素材收集、素材对齐、动效规划、音频设计，到 Remotion 装配、QA、导出和发布包装。
 
@@ -26,20 +27,24 @@
 规划 -> 脚本 -> 素材 -> 对齐 -> 动效 -> 音频 -> Remotion 装配 -> QA/导出 -> 复盘优化
 ```
 
-## 8 层视频创作系统
+## 质量优先视频创作系统
 
-项目使用分层协作，而不是让一个 prompt 负责所有事情。
+项目使用分层协作，而不是让一个 prompt 负责所有事情。新版流程加入导演、素材分析、剪辑决策、美术风格和质量评分层，用来解决“能跑但不够高级”的问题。
 
 | 层级 | 模块 | 负责内容 | 对应 Skill |
 | --- | --- | --- | --- |
 | 1 | Workflow Router / Index | 判断当前阶段，决定调用哪个 skill | `video-workflow-router` |
-| 2 | Creative & Planning | 明确主题、受众、hook、章节、视觉方向 | 项目 workflow 模板 |
-| 3 | Voiceover Editor | 口播转写、口语化改写、spoken beats | `voiceover-editor` |
-| 4 | Asset Factory | 搜集、生成、下载、转码、验证素材 | `asset-gathering` |
-| 5 | Asset Usage & Alignment | 素材去重、时间线分配、语义对齐 | `asset-usage-planner` |
-| 6 | Motion / HyperFrames | 高级动效、hook frame、转场、数据卡 | `motion-fragments` |
-| 7 | Audio Direction | BGM、SFX、ducking、人声优先、音频策略 | `audio-director` |
-| 8 | Remotion Assembly / QA / Export | Composition、Scene、Sequence、字幕、导出 | `remotion-assembler`、`remotion-gotchas-index`、`platform-packaging` |
+| 2 | Creative Direction | 定风格、参考、hook、质量标准 | `creative-director` |
+| 3 | Creative & Planning | 明确主题、受众、章节、制作约束 | 项目 workflow 模板 |
+| 4 | Footage Analysis | 抽帧、镜头切分、素材评分、清理需求 | `footage-analyzer` |
+| 5 | Voiceover Editor | 口播转写、口语化改写、spoken beats | `voiceover-editor` |
+| 6 | Asset Factory | 搜集、生成、下载、转码、验证素材 | `asset-gathering` |
+| 7 | Edit Direction | 开场镜头、剪辑节奏、删减、留存点 | `edit-director` |
+| 8 | Asset Usage & Alignment | 素材去重、时间线分配、语义对齐 | `asset-usage-planner` |
+| 9 | Motion / HyperFrames | 高级动效、hook frame、转场、数据卡 | `motion-fragments` |
+| 10 | Look Design | 调色方向、字幕样式、标题、美术统一 | `look-designer` |
+| 11 | Audio Direction | BGM、SFX、ducking、人声优先、音频策略 | `audio-director` |
+| 12 | Remotion Assembly / QA / Export | Composition、Scene、Sequence、字幕、导出 | `remotion-assembler`、`remotion-gotchas-index`、`quality-critic`、`platform-packaging` |
 
 额外还有一个用于持续优化的 skill：
 
@@ -89,7 +94,27 @@
 
 ## 自定义 Skills
 
-本仓库内置 10 个自定义 Codex Skills。
+本仓库内置 15 个自定义 Codex Skills。
+
+### `creative-director`
+
+负责视频的导演层判断：风格、hook、参考方向、节奏规则和质量标准。
+
+### `footage-analyzer`
+
+负责分析原始视频素材：抽帧、镜头评分、识别高光片段、标记废镜头和文字清理需求。
+
+### `edit-director`
+
+负责高级剪辑判断：开场镜头、剪辑节奏、镜头顺序、删减、J-cut / L-cut 和留存点。
+
+### `look-designer`
+
+负责画面质感：色彩、字幕、字体、标题卡、封面视觉、调色和统一美术规则。
+
+### `quality-critic`
+
+负责质量评分：hook、清晰度、节奏、画面、字幕、音频、平台适配和记忆点。低于 8/10 不应标记为最终版。
 
 ### `video-workflow-router`
 
@@ -382,7 +407,7 @@ workflow/prompt-iteration-log.md
 Windows PowerShell 示例：
 
 ```powershell
-$repoSkills = "E:\OneDrive - The University of Sydney (Students)\文档\AI视频自动剪辑\skills"
+$repoSkills = "E:\自学\projects\AI视频自动剪辑\skills"
 $codexSkills = "$env:USERPROFILE\.codex\skills"
 Copy-Item "$repoSkills\*" $codexSkills -Recurse -Force
 ```
@@ -454,13 +479,14 @@ Remotion 实现原则：
 
 ## 当前状态
 
-- [x] 创建 8 层视频创作工作流
-- [x] 创建 10 个自定义 Codex Skills
+- [x] 创建质量优先视频创作工作流
+- [x] 创建 15 个自定义 Codex Skills
 - [x] 创建主流程 prompt
 - [x] 创建单层重跑 prompt
 - [x] 创建复盘 prompt
 - [x] 创建 prompt iteration log
 - [x] 上传到 GitHub
+- [x] 加入导演、素材分析、剪辑决策、美术和质量评分层
 - [ ] 跑通第一次完整视频制作
 - [ ] 标记 Baseline v1
 - [ ] 继续根据真实制作结果优化 skills
