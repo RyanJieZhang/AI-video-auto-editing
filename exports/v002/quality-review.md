@@ -8,7 +8,7 @@ Improved draft. v002 is now a platform-ready vertical preview with title structu
 
 | Dimension | Score | Notes | Owner |
 | --- | ---: | --- | --- |
-| Hook strength | 8 | Opening now states city and brand immediately: "长沙起飞". | `creative-director` |
+| Hook strength | 8 | Opening now states the landing-city context immediately: "降落長沙". | `creative-director` |
 | Message clarity | 8 | Each beat has one short caption, so the video works without sound. | `edit-director` |
 | Footage selection | 7 | Uses the same 10s source, but framing and hierarchy make it more intentional. | `footage-analyzer`, `edit-director` |
 | Edit rhythm | 7 | Better beat structure, but still limited by the original short source sequence. | `edit-director` |

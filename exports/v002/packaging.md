@@ -14,7 +14,7 @@
 ## Additional Exports
 
 - `exports/张府皇家航空宣传片2_已修改.mp4`: edited source demo with airport text changed.
-- `exports/zhangfu-airline-v002-vertical.mp4`: improved 720x1280 vertical airline promo draft with title, captions, framed source footage, background blur, and preserved source audio.
+- `exports/zhangfu-airline-v002-vertical.mp4`: improved 720x1280 vertical airline promo draft with "降落長沙" title, captions, framed source footage, background blur, and preserved source audio.
 
 ## Title Options
 

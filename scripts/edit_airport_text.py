@@ -76,10 +76,10 @@ def draw_masked_text(
 
 
 def edit_runway_terminal(image: Image.Image) -> None:
-    # Scene around 8s: remove the synthetic rooftop Chinese text and write "长沙"
+    # Scene around 8s: remove the synthetic rooftop Chinese text and write "長沙"
     # back at terminal-roof scale.
     sample_patch(image, (60, 100, 525, 205), (60, 45, 525, 150), radius=8)
-    draw_masked_text(image, (270, 118), "长沙", FONT_RUNWAY, RED)
+    draw_masked_text(image, (270, 118), "長沙", FONT_RUNWAY, RED)
 
 
 def edit_jetbridge(image: Image.Image) -> None:

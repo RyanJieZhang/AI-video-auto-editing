@@ -2,7 +2,7 @@
 
 ## Opening Title
 
-Text: `长沙起飞`
+Text: `降落長沙`
 
 Placement: top safe area, inside a dark translucent panel.
 
