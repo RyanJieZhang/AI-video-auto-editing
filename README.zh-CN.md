@@ -99,8 +99,11 @@
 - `exports/why-not-one-prompt-demo.mp4`：60 秒竖屏 MVP 视频。
 - `exports/张府皇家航空宣传片2_已修改.mp4`：机场文字修改后的横屏示例视频。
 - `exports/zhangfu-airline-v002-vertical.mp4`：张府皇家航空 v002 竖屏优化版。
+- `exports/zhangfu-airline-v003-cinematic.mp4`：张府皇家航空 v003 电影感竖屏候选版。
+- `exports/cover-v003.png`：v003 封面帧。
 - `scripts/render_mvp_video.py`：不依赖 Remotion 的 Python MVP 渲染脚本。
 - `scripts/render_airline_promo_v002.py`：把横屏航空素材包装成竖屏 v002 草稿。
+- `scripts/render_airline_promo_v003.py`：生成电影感竖屏 v003，并混合轻量 BGM/SFX。
 - `scripts/analyze_footage.py`：生成镜头表、素材备注和 contact sheet。
 - `scripts/create_export_version.py`：把成片和相关文档归档到 `exports/vNNN`。
 - `scripts/quality_gate.py`：检查尺寸、音频、质量评分和发布门槛。

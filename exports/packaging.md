@@ -15,6 +15,8 @@
 
 - `exports/张府皇家航空宣传片2_已修改.mp4`: edited source demo with airport text changed.
 - `exports/zhangfu-airline-v002-vertical.mp4`: improved 720x1280 vertical airline promo draft with "降落長沙" title, captions, framed source footage, background blur, and preserved source audio.
+- `exports/zhangfu-airline-v003-cinematic.mp4`: cinematic 720x1280 vertical release candidate with cleaner `長沙` sign, subtle BGM/SFX, cover frame, and less template-like layout.
+- `exports/cover-v003.png`: cover frame for the v003 vertical release candidate.
 
 ## Title Options
 
@@ -77,5 +79,5 @@
 - MVP 暂无真实配音和 BGM。
 - 文字适合竖屏阅读，但后续可以进一步压缩字幕长度。
 - 720p 版本适合快速演示；正式发布建议用 Remotion 渲染 1080x1920。
-- 航空 v002 已经适配竖屏，但仍需要 BGM/SFX 和更干净的机场文字镜头才能进入 final。
+- 航空 v003 已经补上 BGM/SFX、封面帧和更干净的机场文字镜头，可作为 release candidate。
 - 每次导出后运行 `scripts/quality_gate.py`；平均分低于 8/10 时继续迭代，不标记 final。

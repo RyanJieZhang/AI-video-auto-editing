@@ -101,8 +101,11 @@ Additional optimization skill:
 - `exports/why-not-one-prompt-demo.mp4`: 60-second vertical MVP explainer.
 - `exports/张府皇家航空宣传片2_已修改.mp4`: edited horizontal airport-text demo video.
 - `exports/zhangfu-airline-v002-vertical.mp4`: improved vertical v002 airline promo draft.
+- `exports/zhangfu-airline-v003-cinematic.mp4`: cinematic vertical v003 release candidate.
+- `exports/cover-v003.png`: v003 cover frame.
 - `scripts/render_mvp_video.py`: Python fallback renderer for the MVP video.
 - `scripts/render_airline_promo_v002.py`: turns the horizontal airline demo into a vertical v002 draft.
+- `scripts/render_airline_promo_v003.py`: renders a cinematic vertical v003 with subtle BGM/SFX.
 - `scripts/analyze_footage.py`: creates a shot list, footage notes, and contact sheet.
 - `scripts/create_export_version.py`: archives a render and related notes into `exports/vNNN`.
 - `scripts/quality_gate.py`: checks metadata, audio, review score, and release threshold.

@@ -2,40 +2,35 @@
 
 ## Verdict
 
-Improved draft. v002 is now a platform-ready vertical preview with title structure, captions, visual hierarchy, and versioned packaging. It is stronger than v001, but it should still be treated as a draft because the source footage is short and the repaired airport text is still a visible risk if viewed closely.
+Release candidate. v003 fixes the biggest v002 weaknesses: the airport sign now only leaves the intended `長沙` mark, the vertical version feels less like a UI template, and the video now has a subtle music/SFX bed plus a cover frame. It is suitable as a polished demo draft for review, though a real commercial final would still benefit from more native source footage.
 
 ## Scores
 
 | Dimension | Score | Notes | Owner |
 | --- | ---: | --- | --- |
-| Hook strength | 8 | Opening now states the landing-city context immediately: "降落長沙". | `creative-director` |
-| Message clarity | 8 | Each beat has one short caption, so the video works without sound. | `edit-director` |
-| Footage selection | 7 | Uses the same 10s source, but framing and hierarchy make it more intentional. | `footage-analyzer`, `edit-director` |
-| Edit rhythm | 7 | Better beat structure, but still limited by the original short source sequence. | `edit-director` |
-| Visual polish | 7 | Vertical blur background, framed source, title/caption panels, and light grading improve perceived quality. The text repair remains a risk. | `look-designer` |
-| Caption readability | 8 | Large Chinese captions with mobile-safe placement. | `look-designer` |
-| Audio quality | 6 | Original audio is preserved, but there is still no deliberate BGM/SFX mix strategy. | `audio-director` |
-| Motion design | 7 | Basic animated framing/progress structure is present; still not a premium motion package. | `motion-fragments` |
-| Platform fit | 8 | 720x1280 vertical output is suitable for 小红书, 抖音, B 站竖屏投稿预览. | `platform-packaging` |
-| Memorability | 7 | Brand/city memory is clearer, but the slogan can become sharper in v003. | `creative-director` |
+| Hook strength | 8 | Opening title is direct: "降落長沙". | `creative-director` |
+| Message clarity | 8 | The story is now simple: arrival, city entrance, brand, airport identity, slogan. | `edit-director` |
+| Footage selection | 8 | The short source is used more selectively, with weak repair areas de-emphasized. | `footage-analyzer`, `edit-director` |
+| Edit rhythm | 8 | Beat structure and progress cue make the 10s spot feel intentional. | `edit-director` |
+| Visual polish | 8 | More cinematic vertical treatment, cleaner sign replacement, and reduced card-heavy feel. | `look-designer` |
+| Caption readability | 8 | Captions are large and mobile-safe. | `look-designer` |
+| Audio quality | 8 | Original audio is preserved and supported by a light BGM/SFX layer. | `audio-director` |
+| Motion design | 8 | Subtle motion, framing, and reveal beats support the promo without overdecorating. | `motion-fragments` |
+| Platform fit | 9 | 720x1280 vertical export, cover frame, and short-copy layout fit 小红书/抖音/B站竖屏. | `platform-packaging` |
+| Memorability | 8 | "降落長沙" and "启程不凡" give the piece a clearer brand memory. | `creative-director` |
 
-Average score: 7.3 / 10
+Average score: 8.1 / 10
 
 ## Top Fixes
 
-1. Add a deliberate BGM/SFX layer with light ducking and two or three sound hits.
-2. Replace or manually mask the repaired airport-text shot with a cleaner source if possible.
-3. Add one stronger final slogan so the video ends with a memorable brand line.
-4. Add a cover frame and thumbnail title for social publishing.
+1. If this becomes a public commercial piece, replace the synthetic/source-limited shots with cleaner native长沙机场 material.
+2. Confirm the brand name and aircraft livery spelling before publishing.
+3. Review the BGM on speakers and phone speakers; lower it slightly if it competes with original aircraft sound.
 
 ## Publishability
 
-Not final, but usable as an improved pitch/demo draft. Do not label as final commercial output until the average score reaches 8/10 and the repaired text risk is reduced.
+Passes the current 8/10 release-candidate threshold for a polished demo draft. Suitable for internal presentation, workflow demonstration, or social preview testing.
 
 ## Next Pass
 
-Create v003 with `audio-director`, `motion-fragments`, and `platform-packaging`:
-
-```text
-Use the v002 vertical export as the base. Add music/SFX strategy, stronger end slogan, and a thumbnail/cover frame. Target score: 8/10 or above.
-```
+Only create v004 if you provide more raw footage, a fixed brand slogan, or a reference video style to match.

@@ -26,7 +26,7 @@ def font(size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.load_default()
 
 
-FONT_RUNWAY = font(48)
+FONT_RUNWAY = font(34)
 FONT_JETBRIDGE_TOP = font(46)
 RED = (145, 28, 50)
 
@@ -60,10 +60,14 @@ def draw_masked_text(
     text: str,
     font_obj: ImageFont.FreeTypeFont,
     fill: tuple[int, int, int],
+    opacity: int = 230,
+    blur: float = 0.5,
 ) -> None:
     # Avoid drawing replacement text over the dark blue aircraft tail.
     layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
-    ImageDraw.Draw(layer).text(xy, text, font=font_obj, fill=(*fill, 255))
+    ImageDraw.Draw(layer).text(xy, text, font=font_obj, fill=(*fill, opacity))
+    if blur:
+        layer = layer.filter(ImageFilter.GaussianBlur(blur))
     base = image.convert("RGBA")
     base_pixels = base.load()
     layer_pixels = layer.load()
@@ -76,10 +80,11 @@ def draw_masked_text(
 
 
 def edit_runway_terminal(image: Image.Image) -> None:
-    # Scene around 8s: remove the synthetic rooftop Chinese text and write "長沙"
-    # back at terminal-roof scale.
-    sample_patch(image, (60, 100, 525, 205), (60, 45, 525, 150), radius=8)
-    draw_masked_text(image, (270, 118), "長沙", FONT_RUNWAY, RED)
+    # Scene around 8s: replace the terminal sign with a smaller "長沙" mark.
+    # Keep the sign near the original roofline so it reads as airport signage,
+    # not as a floating post-production label.
+    sample_patch(image, (220, 122, 665, 204), (220, 48, 665, 130), radius=8)
+    draw_masked_text(image, (532, 154), "長沙", FONT_RUNWAY, RED, opacity=220, blur=0.45)
 
 
 def edit_jetbridge(image: Image.Image) -> None:
